@@ -1,0 +1,18 @@
+<div>
+    <form [formGroup]="form">
+        <formly-form [form]="form" 
+            [model]="model" 
+            [fields]="fields" 
+            [options]="options"
+        >
+        </formly-form>
+    </form>
+  
+    <button mat-raised-button (click)="submitForm()">Submit</button>
+</div>
+  
+  
+  <hr/>
+  <h6>MODEL DATA</h6>
+  <pre>{{ model | json }}</pre>
+
